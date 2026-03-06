@@ -1,0 +1,4 @@
+SecurityEvent
+| where EventID == 4769
+| summarize RequestCount = count() by TargetUserName, Account
+| where RequestCount > 20

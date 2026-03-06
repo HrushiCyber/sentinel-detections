@@ -1,0 +1,6 @@
+SigninLogs
+| summarize
+FirstLocation=min(Location),
+LastLocation=max(Location)
+by UserPrincipalName
+| where FirstLocation != LastLocation

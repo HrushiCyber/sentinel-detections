@@ -1,0 +1,4 @@
+SecurityEvent
+| where EventID == 4624
+| where LogonType == 3
+| where AuthenticationPackageName == "NTLM"
