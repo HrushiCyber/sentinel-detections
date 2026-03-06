@@ -1,0 +1,4 @@
+SigninLogs
+| where ResultType != 0
+| summarize Attempts=count() by IPAddress
+| where Attempts > 20

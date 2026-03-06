@@ -1,0 +1,3 @@
+SigninLogs
+| summarize LoginCount=count() by UserAgent
+| where LoginCount < 5

@@ -1,0 +1,3 @@
+SecurityEvent
+| where EventID == 5140
+| where ShareName contains "ADMIN$"

@@ -1,0 +1,4 @@
+SigninLogs
+| where ResultType != 0
+| summarize FailedAttempts=count() by UserPrincipalName
+| where FailedAttempts > 10

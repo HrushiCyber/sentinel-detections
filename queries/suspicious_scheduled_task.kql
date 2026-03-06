@@ -1,0 +1,3 @@
+SecurityEvent
+| where EventID == 4698
+| project TimeGenerated, Computer, TaskName, Account

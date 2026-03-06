@@ -1,0 +1,2 @@
+SecurityEvent
+| where EventID == 4728 or EventID == 4732

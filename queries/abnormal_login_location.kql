@@ -1,0 +1,3 @@
+SigninLogs
+| summarize LoginCount=count() by Location
+| where LoginCount < 5

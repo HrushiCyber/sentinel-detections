@@ -1,0 +1,4 @@
+SecurityEvent
+| where EventID == 4625
+| summarize FailureCount=count() by IpAddress
+| where FailureCount > 20

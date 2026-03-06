@@ -1,0 +1,3 @@
+SigninLogs
+| summarize LastLogin=max(TimeGenerated) by UserPrincipalName
+| where LastLogin < ago(90d)

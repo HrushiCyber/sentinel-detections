@@ -1,0 +1,3 @@
+SecurityEvent
+| where EventID == 4720
+| project TimeGenerated, TargetUserName, SubjectUserName

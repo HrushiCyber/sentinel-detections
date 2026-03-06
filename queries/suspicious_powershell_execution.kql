@@ -1,0 +1,3 @@
+SecurityEvent
+| where EventID == 4104
+| where ScriptBlockText contains "Invoke-Expression"

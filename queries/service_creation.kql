@@ -1,0 +1,3 @@
+SecurityEvent
+| where EventID == 7045
+| project TimeGenerated, Computer, ServiceName, Account
