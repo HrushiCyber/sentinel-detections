@@ -29,7 +29,9 @@ sentinel-detections
 ## Detection Coverage
 
 See MITRE mapping:
+
 docs/mitre_coverage.md
+docs/detection_engineering_lifecycle.md
 
 ## Author
 
